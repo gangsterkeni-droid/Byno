@@ -56,20 +56,23 @@ export const botConfig = {
   applications: {
     // Default questions shown when someone fills out an application.
     defaultQuestions: [
-      { question: "What is your name?", required: true },
-      { question: "How old are you?", required: true },
-      { question: "Why do you want to join?", required: true },
+      { question: "What is your roblox username + discord username?", required: true },
+      { question: "What Is Your Age?", required: true },
+      { question: "Why Should You Get Accepted?", required: true },
+      { question: "Have You Been Staff In Other Servers Name And Link ?", required: true },
+      { question: "Do You Understand You Will Have To Wait 5 Hours To Apply Again", required: true },
+      { question: " Do You Have Anything Alse To Say?", required: false },
     ],
 
     // Embed colors by application status.
     statusColors: {
-      pending: "#FFA500",
-      approved: "#00FF00",
-      denied: "#FF0000",
+      pending: "#ffd900",
+      approved: "#00ff1a",
+      denied: "#ff0000",
     },
 
     // How long users must wait before submitting another application (hours).
-    applicationCooldown: 24, 
+    applicationCooldown: 5, 
 
     // Auto-delete denied applications after this many days.
     deleteDeniedAfter: 7, 
@@ -78,7 +81,7 @@ export const botConfig = {
     deleteApprovedAfter: 30, 
 
     // Role IDs allowed to manage applications.
-    managerRoles: [], // Will be populated from environment or database
+    managerRoles: [1515312657924882483], // Will be populated from environment or database
   },
 
   // =========================
